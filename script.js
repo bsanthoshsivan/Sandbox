@@ -136,8 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     orgBtn.addEventListener('click', function(e) {
         e.stopPropagation();
 
-        orgBtn.classList.add('org-active');
-
+        orgBtn.classList.toggle('org-active');
         orgMenu.style.display = (orgMenu.style.display === 'block') ? 'none' : 'block';
         // Position menu below avatar
         const rect = orgBtn.getBoundingClientRect();
