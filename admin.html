@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Admin - Integrate 3.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="assets/fav.png" sizes="16x16">
+</head>
+<body>
+
+    <div id="main">
+        <!-- SIDE NAVIGATION -->
+        <div id="side-nav" class="collapse">
+            <span id="nav-header">
+                <img src="assets/logo.png" alt="Integrate 3.0 Logo" id="logo" height="28">
+            </span>
+
+                <button id="collapse-btn" data-tooltip="Collapse" onclick="toggleNav()">
+                    <img id="toggle-btn" src="assets/chevron-left.svg" height="14">
+                </button>
+
+            <span id="nav-list">
+
+                <a class="nav-menu" href="index.html" data-tooltip="Back to Home">
+                    <span class="menu-icon">
+                        <img src="assets/back.svg" height="14">
+                    </span>
+                    <p class="menu-text">Back to Home</p>
+                </a>
+
+                <!-- SETTINGS -->
+                <span class="nav-group">
+
+                    <span class="group-title">
+                        <p class="group-name">Settings</p>
+                        <span class="separator">
+                        </span>
+                    </span>
+
+                    <a class="nav-menu" href="#" data-tooltip="Overview">
+                        <span class="menu-icon">
+                            <img src="assets/lists.svg" height="14">
+                        </span>
+                        <p class="menu-text">Overview</p>
+                    </a>
+
+                    <a class="nav-menu" href="#" data-tooltip="Billing & Plans">
+                        <span class="menu-icon">
+                            <img src="assets/bill.svg" height="14">
+                        </span>
+                        <p class="menu-text">Billing & Plans</p>
+                    </a>
+
+                    <a class="nav-menu" href="#" data-tooltip="People">
+                        <span class="menu-icon">
+                            <img src="assets/buyinggroups.svg" height="14">
+                        </span>
+                        <p class="menu-text">People</p>
+                    </a>
+
+                    <a class="nav-menu" href="#" data-tooltip="Partners">
+                        <span class="menu-icon">
+                            <img src="assets/partners.svg" height="14">
+                        </span>
+                        <p class="menu-text">Partners</p>
+                    </a>
+
+                    <a class="nav-menu" href="#" data-tooltip="Monitoring">
+                        <span class="menu-icon">
+                            <img src="assets/monitor.svg" height="14">
+                        </span>
+                        <p class="menu-text">Monitoring</p>
+                    </a>
+
+                    <a class="nav-menu" href="#" data-tooltip="Security & Privacy">
+                        <span class="menu-icon">
+                            <img src="assets/security.svg" height="14">
+                        </span>
+                        <p class="menu-text">Security & Privacy</p>
+                    </a>
+
+                    <a class="nav-menu" href="#" data-tooltip="Objects & Rules">
+                        <span class="menu-icon">
+                            <img src="assets/table.svg" height="14">
+                        </span>
+                        <p class="menu-text">Objects & Rules</p>
+                    </a>
+
+                </span>
+        
+
+            </span>
+
+        </div>
+
+        <div id="content">
+            <!-- TOP NAVIGATION -->
+            <div id="top-nav">
+                <div id="left-container">
+
+                    <div id="global-search">
+                        <img src="assets/search.svg" height="16">
+                        <input type="text" placeholder="Search anything...">
+                    </div>
+
+                </div>
+                <div id="right-container">
+                    
+                    <button id="org-switch" class="org-switch">
+                        <img src="assets/org.svg" height="16">
+                        <p>Marketing Matters</p>
+                        <img src="assets/caret.svg" height="12">
+                    </button>
+
+                    <div id="btn-group">
+                        <button class="top-btn" id="help-btn" data-tooltip="Help">
+                            <img src="assets/help.svg" height="16">
+                        </button>
+
+                        <button class="top-btn" id="cog-btn" data-tooltip="Notifications">
+                            <img src="assets/cog.svg" height="16">
+                        </button>
+                    </div>
+                    
+                    <button id="avatar" class="avatar">
+                        <p>Bw</p>
+                    </button>
+
+                </div>
+            </div>
+            <div id="help-menu" class="menu-list">
+                <a class="menu-item" href="#">Help center</a>
+                <a class="menu-item" href="#">Privacy policy</a>
+            </div>
+            <div id="org-menu" class="menu-list">
+                <a class="menu-item" href="#">Marketing Matters</a>
+                <a class="menu-item" href="#">Acme Inc</a>
+                <a class="menu-item" href="#">Pipeline360</a>
+            </div>
+            <div id="user-menu" class="menu-list">
+                <div id="profile">
+                    <div id="profile-header">
+                        <div id="avatar-large">
+                            <p>Bw</p>
+                        </div>
+                        <div id="info">
+                            <p id="uname">Bruce Wayne</p>
+                            <p id="uemail">bruce.wayne@gmail.com</p>
+                        </div>
+                    </div>
+                    <div id="view-div">
+                        <a id="link" href="#">View Profile</a>
+                        <img id="view-link" src="assets/openlink.svg" height="12">
+                    </div>
+                </div>
+                <hr class="menu-separator">
+                <a class="menu-item" href="#">Account Admin</a>
+                <hr class="menu-separator">
+                <a class="menu-item danger" href="#">Log Out</a>
+            </div>
+
+            <!-- PAGE -->
+            <div id="page-content">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,498 @@
+:root{
+    font-family: 'Inter', sans-serif;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+
+#main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+
+/* SIDE NAVIGATION */
+
+#side-nav{
+    background-color: #1B3D5C;
+    /* background-color: #0F4C81; */
+    /* background-color: #0C51A6; */  
+}
+
+.expand{
+    width: 225px;
+    transition: all 0.3s ease;  
+}
+
+.collapse{
+    width: 75px;
+    transition: all 0.3s ease;  
+}
+
+#collapse-btn{
+    position: absolute;
+    top: 40px;
+    right: -12px;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid #F1F2F4;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+#side-nav:hover #collapse-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#nav-header{
+    height: fit-content;
+    display: grid;
+    padding: 16px 20px;
+}
+
+#logo{
+    padding:2px 0px;
+    width: --webkit-fill-available;
+}
+
+#nav-list{
+    padding:24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: -webkit-fill-available;
+
+    /* commented the below overflow line for tooltip to be shown */
+    /* overflow-y: scroll;  */  
+   
+    padding-bottom: 120px;
+}
+
+.nav-group{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.group-title{
+    display: flex;
+    align-items: center;
+    height:18px;
+    padding: 0px 10px;
+    gap:8px
+}
+
+.group-name{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.separator{
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: -webkit-fill-available;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    height:36px;
+    gap: 12px;
+    cursor: pointer;
+    padding: 0px 10px;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    position: relative;
+    min-height:36px;
+}
+
+.nav-menu:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: none;
+    background-color: #E06442;
+    transition: all 0.2s ease;
+}
+
+.active:hover{
+    text-decoration: none;
+    background-color: #E06442;
+    transition: all 0.3s ease;
+}
+
+
+.menu-text{
+    color: white;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu-icon{
+    width: 16px;
+    height: 18px;
+}
+
+.menu-expand{
+    display: inline;
+    transition: all 0.3s ease;  
+}
+
+.menu-collapse{
+    display: none;
+    transition: all 0.3s ease; 
+}
+
+.nav-menu[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #091E42;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+    white-space: nowrap;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.collapse .nav-menu[data-tooltip]:hover::after {
+    opacity: 1;
+}
+
+#side-nav {
+    position: relative;
+}
+
+
+
+#content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F7F4;
+    overflow: hidden;
+}
+
+
+
+/* TOP NAVIGATION */
+#top-nav{
+    height:56px;
+    padding: 0px 20px;
+    display: flex;
+    background-color: white;
+    border-bottom: #F1F2F4 1px solid;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease; 
+}
+
+#search-bar{
+    width: 240px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #DCDFE4;
+    padding: 0px 10px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+#search-bar::placeholder{
+    color:#8590A2;
+}
+
+#global-search{
+    width: 240px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #DCDFE4;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+
+#global-search input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    color:#172B4D;
+}
+
+#global-search input::placeholder{
+    color:#8590A2;
+    font-weight: 300;
+}
+
+#global-search:hover{
+   cursor: text;
+    border: 1px solid #0860A8;
+    transition: all 0.2s ease;
+}
+
+#right-container, #left-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#btn-group{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-btn{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.top-btn:hover{
+    background-color: #F1F2F4;
+    transition: all 0.2s ease;
+}
+
+.topbtn-active{
+    background-color: #F1F2F4;
+    transition: all 0.2s ease;
+}
+
+.avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    cursor: pointer;
+    background-color: #EBE6FD;
+    color:#5649A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 16px;
+    transition: all 0.2s ease;
+    border-style: none;
+}
+
+.avatar:hover{
+    background-color: #E0D7FC;
+    transition: all 0.2s ease;
+}
+
+.avatar-active{
+    background-color: #E0D7FC;
+    transition: all 0.2s ease;
+}
+
+.org-switch{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    padding:0px 10px;
+    color:#172B4D;
+    transition: all 0.2s ease;
+    border-style: none;
+    background-color: transparent;
+}
+
+.org-switch:hover{
+    background-color: #F1F2F4;
+    transition: all 0.2s ease;
+}
+
+.org-active{
+    background-color: #F1F2F4;
+}
+
+
+
+/* MENU CONTENT */
+.menu-list{
+    padding:8px;
+    width: 250px;
+    background-color: white;
+    border-radius: 6px;
+    border:1px solid #F1F2F4;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item{
+    height:32px;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    gap:8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color:#172B4D;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    border-radius: 4px;
+}
+
+.menu-item:hover{
+    background-color: #F0F8FF;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.danger{
+    color:#E02E2E;
+}
+
+.menu-separator{
+    height: 1px;
+    background-color: #F1F2F4;
+    margin: 8px 0px;
+    border:0px;
+    border-bottom:1px;
+}
+
+
+
+/* USER MENUS */
+#profile{
+    padding:8px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+#profile-header{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+#avatar-large{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #EBE6FD;
+    color:#5649A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+#info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:4px;
+}
+
+#uname{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color:#172B4D;
+    margin:0px;
+}
+
+#uemail{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+    color:#44546F;
+     margin:0px;
+}
+
+#view-div{
+    padding-left: 52px;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    cursor: pointer;
+}
+
+#link{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color:#0860A8;
+    margin:0px;
+    text-decoration: underline dotted;
+}
+
+#user-menu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+#help-menu {
+    width:160px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+#org-menu {
+    width:200px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
