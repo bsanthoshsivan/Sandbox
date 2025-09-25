@@ -129,7 +129,7 @@
 </g>
 <defs>
 <clipPath id="clip0_223_5019">
-<rect width="60" height="1240" rx="6" fill="white"/>
+<path d="M0 5.99999C0 2.68629 2.68629 0 6 0H60V1240H6C2.68629 1240 0 1237.31 0 1234V5.99999Z" fill="white"/>
 </clipPath>
 </defs>
 </svg>

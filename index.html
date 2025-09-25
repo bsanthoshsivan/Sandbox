@@ -223,20 +223,17 @@
 
 
 
-
-
-            <!-- LEAD PAGE -->
-            <div class="page-content">
+            <!-- CAMPAIGNS PAGE -->
+            <div class="page-content" id="campaigns-page" style="display:none;">
                 <div class="page-header">
                     <div class="left-header">
-                        <p class="header-title">Leads</p>
-                        <p class="header-subtext">25 sources</p>
+                        <p class="header-title">Campaigns</p>
+                        <p class="header-subtext">290 campaigns</p>
                     </div>
-
                     <div class="right-header">
-                        <button class="header-btn primary-btn" id="new-lead-btn">
+                        <button class="header-btn primary-btn" id="new-campaign-btn">
                             <img src="assets/plus.svg" height="16">
-                            Upload disposition
+                            Create Campaign
                         </button>
                     </div>
                 </div>
@@ -246,15 +243,13 @@
                         <div class="left-table-header">
                             <button class="table-action-btn">
                                 <img src="assets/filter.svg" height="14">
-                                Filter: Live, Accepted, +2
+                                Filter: Live, Draft
                                 <img src="assets/caret.svg" height="12">
                             </button>
-
                             <button class="table-action-btn">
                                 <img src="assets/sort.svg" height="14">
-                                Sort: Source ID
+                                Sort: Status
                             </button>
-
                             <button class="table-action-btn">
                                 <img src="assets/customize.svg" height="14">
                                 Customize
@@ -266,17 +261,406 @@
                                 <img src="assets/search.svg" height="14">
                                 <input type="text" placeholder="Search table...">
                             </div>
-
                             <button class="icon-btn m-icon-btn">
                                 <img src="assets/more.svg" height="14">
                             </button>
-
-                            <!-- <button class="tertiary-btn m-btn">
-                                Action Button
-                            </button> -->
                         </div>
                     </div>
 
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/campaigntable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: px;">
+                            <img src="pages/action2.svg">
+                        </div>
+                    </div>
+
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 12</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-25 out of 290 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                25
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOURCES PAGE -->
+            <div class="page-content" id="sources-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Sources</p>
+                        <p class="header-subtext">278 sources</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-source-btn" style="display: none;">
+                            <img src="assets/plus.svg" height="16">
+                            Add Source
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: Live, Pending, +3
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Created Date
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/sourcetable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: 92px;">
+                            <img src="pages/action2.svg">
+                        </div>
+                    </div>
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 11</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-25 out of 278 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                25
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTS PAGE -->
+            <div class="page-content" id="lists-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Lists</p>
+                        <p class="header-subtext">124 lists</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-list-btn">
+                            <img src="assets/plus.svg" height="16">
+                            Create List
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: General, Domain, +1
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: List Name
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <!-- <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/listtable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/action1.svg">
+                        </div>
+                    </div>
+
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 5</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-25 out of 124 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                25
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ASSETS PAGE -->
+            <div class="page-content" id="assets-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Assets</p>
+                        <p class="header-subtext">10 assets</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-asset-btn">
+                            <img src="assets/plus.svg" height="16">
+                            Add Asset
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: All
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Asset Name
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/assettable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/action3.svg">
+                        </div>
+                    </div>
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 1</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-10 out of 10 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                10
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PARTNERS PAGE -->
+            <div class="page-content" id="partners-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Partners</p>
+                        <p class="header-subtext">7 partners</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-partner-btn">
+                            <img src="assets/plus.svg" height="16">
+                            Add Partner
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: All
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Partner Name
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/partnertable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/action3.svg">
+                        </div>
+                    </div>
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 1</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-7 out of 7 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                7
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LEADS PAGE -->
+            <div class="page-content" id="leads-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Leads</p>
+                        <p class="header-subtext">300 sources</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-lead-btn">
+                            <img src="assets/upload_bracket.svg" height="16">
+                            Upload disposition
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: Live, Accepted, +2
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Source ID
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button>
+                        </div>
+                    </div>
                     <div class="main-table">
                         <div class="sticky-col" style="width: 60px;">
                             <img src="pages/select.svg">
@@ -288,7 +672,6 @@
                             <img src="pages/action3.svg">
                         </div>
                     </div>
-                    
                     <div class="table-footer">
                         <div class="left-table-footer">
                             <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
@@ -296,9 +679,7 @@
                             </button>
                             <div class="page-control">
                                 <p class="pagination-text">Page</p>
-                                    <button class="tertiary-btn m-btn">
-                                        1
-                                    </button>
+                                <button class="tertiary-btn m-btn">1</button>
                                 <p class="pagination-text">of 12</p>
                             </div>
                             <button class="icon-btn m-icon-btn">
@@ -314,11 +695,57 @@
                             </button>
                         </div>
                     </div>
-                </div>            
+                </div>
             </div>
 
 
-            
+
+            <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Map nav-menu hrefs to page ids
+                const navMap = {
+                    "#leads": "leads-page",
+                    "#lists": "lists-page",
+                    "#assets": "assets-page",
+                    "#partners": "partners-page",
+                    "#campaigns": "campaigns-page",
+                    "#sources": "sources-page",
+                };
+
+                // Assign hrefs to nav-menu links for navigation
+                document.querySelectorAll('.nav-menu').forEach(function(link) {
+                    const text = link.querySelector('.menu-text').textContent.trim().toLowerCase();
+                    if (navMap["#" + text]) {
+                        link.setAttribute('href', "#" + text);
+                    }
+                });
+
+                // Show correct page on nav click
+                function showPage(pageId) {
+                    document.querySelectorAll('.page-content').forEach(function(page) {
+                        page.style.display = "none";
+                    });
+                    const page = document.getElementById(pageId);
+                    if (page) page.style.display = "";
+                }
+
+                // Initial page
+                // showPage("leads-page");
+
+                // Navigation click handler
+                document.querySelectorAll('.nav-menu').forEach(function(link) {
+                    link.addEventListener('click', function(e) {
+                        const href = link.getAttribute('href');
+                        if (navMap[href]) {
+                            e.preventDefault();
+                            showPage(navMap[href]);
+                            document.querySelectorAll('.nav-menu').forEach(l => l.classList.remove('active'));
+                            link.classList.add('active');
+                        }
+                    });
+                });
+            });
+            </script>
 
             
             

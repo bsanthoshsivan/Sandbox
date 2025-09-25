@@ -729,6 +729,10 @@ body{
     overflow-y: hidden;
 }
 
+.data-cols img{
+    /* width: -webkit-fill-available; */
+}
+
 
 /* PAGINATION */
 .table-footer{
