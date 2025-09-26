@@ -38,7 +38,6 @@
 
                     <span class="group-title">
                         <p class="group-name">Manage</p>
-
                         <span class="separator">
                         </span>
                     </span>
@@ -125,7 +124,6 @@
 
                 <span class="group-title">
                     <p class="group-name">Analyze</p>
-
                     <span class="separator">
                     </span>
                 </span>
@@ -161,12 +159,10 @@
             <!-- TOP NAVIGATION -->
             <div id="top-nav">
                 <div id="left-container">
-
                     <div id="global-search">
                         <img src="assets/search.svg" height="16">
                         <input type="text" placeholder="Search anything...">
                     </div>
-
                 </div>
                 <div id="right-container">
                     
@@ -223,17 +219,751 @@
                 <a class="menu-item danger" href="#">Log Out</a>
             </div>
 
-            <!-- PAGE -->
-            <div id="page-content">
-                <div id="banner">
-                    <p class="banner-text">Welcome to New Navigation Prototype!</p>
-                    <p class="banner-subtext">This prototype is designed to test the usability of our new navigation. Please click around and explore the new menu to see how it looks and feels.</p>
+
+
+            <!-- LEADS PAGE -->
+            <div class="page-content" id="leads-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Leads</p>
+                        <p class="header-subtext">300 sources</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-lead-btn">
+                            <img src="assets/upload_bracket.svg" height="16">
+                            Upload disposition
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: Live, Accepted, +2
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Source ID
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/leadtable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/action3.svg">
+                        </div>
+                    </div>
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 12</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-25 out of 300 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                25
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTS PAGE -->
+            <div class="page-content" id="lists-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Lists</p>
+                        <p class="header-subtext">124 lists</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-list-btn">
+                            <img src="assets/plus.svg" height="16">
+                            Create list
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: General, Domain, +1
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: List Name
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <!-- <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/listtable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/action1.svg">
+                        </div>
+                    </div>
+
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 5</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-25 out of 124 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                25
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ASSETS PAGE -->
+            <div class="page-content" id="assets-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Assets</p>
+                        <p class="header-subtext">51 assets</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn tertiary-btn" id="new-asset-btn">
+                            <!-- <img src="assets/plus.svg" height="16"> -->
+                            Upload file
+                        </button>
+                        <button class="header-btn primary-btn" id="new-asset-btn">
+                            <img src="assets/plus.svg" height="16">
+                            New folder
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: All
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Created Date
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/assetstable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/action3.svg">
+                        </div>
+                    </div>
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 6</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-10 out of 51 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                10
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- INTEGRATIONS PAGE -->
+            <div class="page-content" id="integrations-page" style="display:none;">
+
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Integrations</p>
+                        <p class="header-subtext" style="display: none;">None</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-partner-btn" style="display: none;">
+                            <img src="assets/plus.svg" height="16">
+                            Create Buying Group
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tabs-container">
+                    <button class="tab active-tab" id="library-tab">Connector Library</button>
+                    <button class="tab" id="myconnection-tab">My Connections</button>
                 </div>
 
 
-            
+
+                <div class="cards-container">
+
+                    <div class="section-container">
+                        <div class="section-img">
+                            <img src="assets/outbound.svg" height="24">
+                        </div>
+                        <div class="section-info">
+                            <p class="section-title">Outbound connectors</p>
+                            <p class="section-desc">Export enriched leads to external platforms for seamless engagement.</p>
+                        </div>
+                    </div>
+
+                    <div class="cards-grid">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="logos/marketo.svg" height="32" class="card-img">
+                                <div class="card-info">
+                                    <p class="card-title">Marketo</p>
+                                    <p class="card-subtitle">CRM Integration</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">
+                                Export and manage enriched leads directly into Marketo for seamless campaign execution.
+                            </p>
+                            <div class="card-actions">
+                                <button class="tertiary-btn m-btn">Learn more</button>
+                                <button class="primary-btn m-btn">
+                                    <img src="assets/plus.svg" height="16">
+                                    Add connection
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="logos/ob.svg" height="32" class="card-img">
+                                <div class="card-info">
+                                    <p class="card-title">Outbound Forms</p>
+                                    <p class="card-subtitle">CRM Integration</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">
+                                Effortlessly send data to external forms, ensuring smooth integration with external lead management tools.
+                            </p>
+                            <div class="card-actions">
+                                <button class="tertiary-btn m-btn">Learn more</button>
+                                <button class="primary-btn m-btn">
+                                    <img src="assets/plus.svg" height="16">
+                                    Add connection
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                     <div class="section-container">
+                        <div class="section-img">
+                            <img src="assets/inbound.svg" height="24">
+                        </div>
+                        <div class="section-info">
+                            <p class="section-title">Inbound connectors</p>
+                            <p class="section-desc">Sync leads and data between Integrate and your marketing stack.</p>
+                        </div>
+                    </div>
+
+                    <div class="cards-grid">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="logos/fb.png" height="32" class="card-img">
+                                <div class="card-info">
+                                    <p class="card-title">Facebook</p>
+                                    <p class="card-subtitle">CRM Integration</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">
+                                Empower your social campaigns by seamlessly integrating Facebook with Integrate, enabling automatic lead flow into integrate platform.
+                            </p>
+                            <div class="card-actions">
+                                <button class="tertiary-btn m-btn">Learn more</button>
+                                <button class="primary-btn m-btn">
+                                    <img src="assets/plus.svg" height="16">
+                                    Add connection
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="logos/linkedin.png" height="32" class="card-img">
+                                <div class="card-info">
+                                    <p class="card-title">LinkedIn</p>
+                                    <p class="card-subtitle">CRM Integration</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">
+                                Empower your social campaigns by seamlessly integrating LinkedIn with Integrate, enabling automatic lead flow into integrate platform.
+                            </p>
+                            <div class="card-actions">
+                                <button class="tertiary-btn m-btn">Learn more</button>
+                                <button class="primary-btn m-btn">
+                                    <img src="assets/plus.svg" height="16">
+                                    Add connection
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="logos/6s.png" height="32" class="card-img">
+                                <div class="card-info">
+                                    <p class="card-title">6Sense</p>
+                                    <p class="card-subtitle">CRM Integration</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">
+                                Unlock account-based marketing potential by syncing intent-rich segments from 6sense.
+                            </p>
+                            <div class="card-actions">
+                                <button class="tertiary-btn m-btn">Learn more</button>
+                                <button class="primary-btn m-btn">
+                                    <img src="assets/plus.svg" height="16">
+                                    Add connection
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="logos/on24.png" height="32" class="card-img">
+                                <div class="card-info">
+                                    <p class="card-title">on24</p>
+                                    <p class="card-subtitle">CRM Integration</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">
+                                Sync your On24 webinars to collect leads and attendee data effortlessly into your system.
+                            </p>
+                            <div class="card-actions">
+                                <button class="tertiary-btn m-btn">Learn more</button>
+                                <button class="primary-btn m-btn">
+                                    <img src="assets/plus.svg" height="16">
+                                    Add connection
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="section-container">
+                        <div class="section-img">
+                            <img src="assets/enrich.svg" height="24">
+                        </div>
+                        <div class="section-info">
+                            <p class="section-title">Data enrichment connectors</p>
+                            <p class="section-desc">Enhance your lead data by integrating with data enrichment providers for deeper insights.</p>
+                        </div>
+                    </div>
+
+                    <div class="cards-grid">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="logos/zm.png" height="32" class="card-img">
+                                <div class="card-info">
+                                    <p class="card-title">ZoomInfo</p>
+                                    <p class="card-subtitle">CRM Integration</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">
+                               Pull enriched data from ZoomInfo into the Integrate platform via API to keep your lead up-to-date.
+                            </p>
+                            <div class="card-actions">
+                                <button class="tertiary-btn m-btn">Learn more</button>
+                                <button class="primary-btn m-btn">
+                                    <img src="assets/plus.svg" height="16">
+                                    Add connection
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                     <div class="section-container">
+                        <div class="section-img">
+                            <img src="assets/bi.svg" height="24">
+                        </div>
+                        <div class="section-info">
+                            <p class="section-title">Bidirectional connectors</p>
+                            <p class="section-desc">Pull data from other platforms into Integrate and push data from Integrate to other platforms.</p>
+                        </div>
+                    </div>
+
+                    <div class="cards-grid">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="logos/sf.png" height="32" class="card-img">
+                                <div class="card-info">
+                                    <p class="card-title">Salesforce</p>
+                                    <p class="card-subtitle">CRM Integration</p>
+                                </div>
+                            </div>
+                            <p class="card-desc">
+                               Along with sending data to Salesforce, now bring critical data back into Integrate, and other dashboards with real-time insights.
+                            </p>
+                            <div class="card-actions">
+                                <button class="tertiary-btn m-btn">Learn more</button>
+                                <button class="primary-btn m-btn">
+                                    <img src="assets/plus.svg" height="16">
+                                    Add connection
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
 
             </div>
+
+            <!-- PARTNERS PAGE -->
+            <div class="page-content" id="partners-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Partners</p>
+                        <p class="header-subtext">78 partners</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-partner-btn" style="display: none;">
+                            <img src="assets/plus.svg" height="16">
+                            Add partner
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Name
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <!-- <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div> -->
+                        <div class="data-cols">
+                            <img src="pages/partnertable.svg">
+                        </div>
+                        <!-- <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/action3.svg">
+                        </div> -->
+                    </div>
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 4</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-25 out of 78 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                25
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUYING PAGE -->
+            <div class="page-content" id="bg-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Buying groups</p>
+                        <p class="header-subtext" style="display: none;">None</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-partner-btn" style="display: none;">
+                            <img src="assets/plus.svg" height="16">
+                            Create Buying Group
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div class="main-table">
+                        <div class="data-cols">
+                            <img src="pages/bgempty.svg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- CAMPAIGNS PAGE -->
+            <div class="page-content" id="campaigns-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Campaigns</p>
+                        <p class="header-subtext">290 campaigns</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-campaign-btn">
+                            <img src="assets/plus.svg" height="16">
+                            Create campaign
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: Live, Draft
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Status
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/campaigntable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: px;">
+                            <img src="pages/action2.svg">
+                        </div>
+                    </div>
+
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 12</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-25 out of 290 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                25
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOURCES PAGE -->
+            <div class="page-content" id="sources-page" style="display:none;">
+                <div class="page-header">
+                    <div class="left-header">
+                        <p class="header-title">Sources</p>
+                        <p class="header-subtext">278 sources</p>
+                    </div>
+                    <div class="right-header">
+                        <button class="header-btn primary-btn" id="new-source-btn" style="display: none;">
+                            <img src="assets/plus.svg" height="16">
+                            Add Source
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="left-table-header">
+                            <button class="table-action-btn">
+                                <img src="assets/filter.svg" height="14">
+                                Filter: Live, Pending, +3
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/sort.svg" height="14">
+                                Sort: Created Date
+                            </button>
+                            <button class="table-action-btn">
+                                <img src="assets/customize.svg" height="14">
+                                Customize
+                            </button>
+                        </div>
+                        <div class="right-table-header">
+                            <div class="table-search">
+                                <img src="assets/search.svg" height="14">
+                                <input type="text" placeholder="Search table...">
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/more.svg" height="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-table">
+                        <div class="sticky-col" style="width: 60px;">
+                            <img src="pages/select.svg">
+                        </div>
+                        <div class="data-cols">
+                            <img src="pages/sourcetable.svg">
+                        </div>
+                        <div class="sticky-col" style="width: 92px;">
+                            <img src="pages/action2.svg">
+                        </div>
+                    </div>
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <button class="icon-btn m-icon-btn" style="opacity: 0.4; cursor: default;">
+                                <img src="assets/chevron-left.svg" height="14">
+                            </button>
+                            <div class="page-control">
+                                <p class="pagination-text">Page</p>
+                                <button class="tertiary-btn m-btn">1</button>
+                                <p class="pagination-text">of 11</p>
+                            </div>
+                            <button class="icon-btn m-icon-btn">
+                                <img src="assets/chevron-right.svg" height="14">
+                            </button>
+                            <p class="pagination-text">1-25 out of 278 records</p>
+                        </div>
+                        <div class="right-table-footer">
+                            <p class="pagination-text">Record per page</p>
+                            <button class="tertiary-btn m-btn">
+                                25
+                                <img src="assets/caret.svg" height="12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
         </div>
     </div>
 </body>
