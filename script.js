@@ -161,3 +161,50 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+                // Map nav-menu hrefs to page ids
+                const navMap = {
+                    "#leads": "leads-page",
+                    "#lists": "lists-page",
+                    "#assets": "assets-page",
+                    "#integrations": "integrations-page",
+                    "#partners": "partners-page",
+                    "#buying groups": "bg-page",
+                    "#campaigns": "campaigns-page",
+                    "#sources": "sources-page",
+                };
+
+                // Assign hrefs to nav-menu links for navigation
+                document.querySelectorAll('.nav-menu').forEach(function(link) {
+                    const text = link.querySelector('.menu-text').textContent.trim().toLowerCase();
+                    if (navMap["#" + text]) {
+                        link.setAttribute('href', "#" + text);
+                    }
+                });
+
+                // Show correct page on nav click
+                function showPage(pageId) {
+                    document.querySelectorAll('.page-content').forEach(function(page) {
+                        page.style.display = "none";
+                    });
+                    const page = document.getElementById(pageId);
+                    if (page) page.style.display = "";
+                }
+
+
+                // Navigation click handler
+                document.querySelectorAll('.nav-menu').forEach(function(link) {
+                    link.addEventListener('click', function(e) {
+                        const href = link.getAttribute('href');
+                        if (navMap[href]) {
+                            e.preventDefault();
+                            showPage(navMap[href]);
+                            document.querySelectorAll('.nav-menu').forEach(l => l.classList.remove('active'));
+                            link.classList.add('active');
+                        }
+                    });
+                });
+            });
+
