@@ -156,8 +156,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-
-
 });
 
 
@@ -174,6 +172,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     "#channels": "channels-page",
                     "#campaigns": "campaigns-page",
                     "#sources": "sources-page",
+                    "#insights": "insights-page", 
+
                 };
 
                 // Assign hrefs to nav-menu links for navigation
