@@ -171,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     "#integrations": "integrations-page",
                     "#partners": "partners-page",
                     "#buying groups": "bg-page",
+                    "#channels": "channels-page",
                     "#campaigns": "campaigns-page",
                     "#sources": "sources-page",
                 };
@@ -207,3 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             });
 
+
+            document.getElementById('customChannelToggle').addEventListener('change', function() {
+                this.checked ? 'ON' : 'OFF';
+            });
